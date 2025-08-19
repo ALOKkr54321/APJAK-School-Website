@@ -163,19 +163,26 @@
       .map-container:hover {
         filter: grayscale(0);
       }
+      .navbar-visible {
+  transform: translateY(0);
+}
+
+.navbar-hidden {
+  transform: translateY(-100%);
+}
     </style>
   </head>
   <body class="bg-gray-50 smooth-scroll">
     <!-- Navigation -->
     <nav
-      class="nav-blur shadow-lg fixed top-0 w-full z-50 transition-all duration-300"
+      class="nav-blur shadow-lg fixed top-0 w-full z-50 transition-all duration-300 navbar-visible"
       id="navbar"
     >
       <div class="container mx-auto px-4 sm:px-6 lg:px-16">
         <div class="flex justify-between items-center py-4">
           <div class="flex items-center space-x-3 animate-fade-in-left">
             <div
-              class="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center"
+              class="w-16 h-16 flex items-center justify-center"
             >
               <img
                 src="assets/img/logo.jpeg"
@@ -185,7 +192,7 @@
             </div>
             <div>
               <h3 class="text-primary-800 text-lg font-bold">A.P.J.A. KALAM HIGH SCHOOL</h3>
-              <h3 class="text-primary-800 text-lg">अ.पी.जे. अब्दुल कलाम उच्च विद्यालय</h3>
+              <h3 class="text-primary-800 text-lg hidden md:block">अ.पी.जे. अब्दुल कलाम उच्च विद्यालय</h3>
             </div>
           </div>
 
@@ -1017,5 +1024,25 @@
       }
       preloadImages();
     </script>
+    <script>
+  let lastScrollTop = 0;
+  const navbar = document.getElementById("navbar");
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Scrolling down
+      navbar.classList.remove("navbar-visible");
+      navbar.classList.add("navbar-hidden");
+    } else {
+      // Scrolling up
+      navbar.classList.remove("navbar-hidden");
+      navbar.classList.add("navbar-visible");
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
+  });
+</script>
   </body>
 </html>
