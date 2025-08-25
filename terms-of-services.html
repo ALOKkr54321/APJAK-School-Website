@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Service - APJA Kalam High School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: "#eff6ff",
+                100: "#dbeafe",
+                500: "#3b82f6",
+                600: "#2563eb",
+                700: "#1d4ed8",
+                800: "#1e40af",
+                900: "#1e3a8a",
+              },
+              accent: {
+                400: "#06b6d4",
+                500: "#0891b2",
+                600: "#0e7490",
+              },
+            },
+            animation: {
+              "fade-in-up": "fadeInUp 0.8s ease-out",
+              "fade-in-down": "fadeInDown 0.8s ease-out",
+              "fade-in-left": "fadeInLeft 0.8s ease-out",
+              "fade-in-right": "fadeInRight 0.8s ease-out",
+              "bounce-slow": "bounce 2s infinite",
+              "pulse-slow": "pulse 3s infinite",
+              float: "float 6s ease-in-out infinite",
+            },
+            keyframes: {
+              fadeInUp: {
+                "0%": { opacity: "0", transform: "translateY(60px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              fadeInDown: {
+                "0%": { opacity: "0", transform: "translateY(-60px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              fadeInLeft: {
+                "0%": { opacity: "0", transform: "translateX(-60px)" },
+                "100%": { opacity: "1", transform: "translateX(0)" },
+              },
+              fadeInRight: {
+                "0%": { opacity: "0", transform: "translateX(60px)" },
+                "100%": { opacity: "1", transform: "translateX(0)" },
+              },
+              float: {
+                "0%, 100%": { transform: "translateY(0px)" },
+                "50%": { transform: "translateY(-20px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .gradient-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+
+      .gradient-text {
+        background: linear-gradient(135deg, #3b82f6, #06b6d4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .hero-gradient {
+        background: linear-gradient(
+          135deg,
+          #1e3a8a 0%,
+          #3b82f6 50%,
+          #06b6d4 100%
+        );
+      }
+
+      .nav-blur {
+        backdrop-filter: blur(20px);
+        background: rgba(255, 255, 255, 0.95);
+      }
+
+      .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .bg-pattern {
+        background-image: radial-gradient(
+          circle at 1px 1px,
+          rgba(255, 255, 255, 0.15) 1px,
+          transparent 0
+        );
+        background-size: 20px 20px;
+      }
+
+      .smooth-scroll {
+        scroll-behavior: smooth;
+      }
+
+      .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease;
+      }
+
+      .animate-on-scroll.animate {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .navbar-visible {
+        transform: translateY(0);
+      }
+
+      .navbar-hidden {
+        transform: translateY(-100%);
+      }
+
+      .terms-section {
+        margin-bottom: 2.5rem;
+      }
+
+      .terms-section h3 {
+        color: #1e40af;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+
+      .terms-section h4 {
+        color: #1e40af;
+        margin-bottom: 0.75rem;
+        font-weight: 600;
+        font-size: 1.25rem;
+      }
+
+      .terms-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .terms-list li {
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+      }
+
+      .terms-list li:before {
+        content: "•";
+        color: #3b82f6;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 smooth-scroll">
+    <!-- Navigation -->
+    <nav
+      class="nav-blur shadow-lg fixed top-0 w-full z-50 transition-all duration-300 navbar-visible"
+      id="navbar"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-16">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center space-x-3 animate-fade-in-left">
+            <div class="w-16 h-16 flex items-center justify-center">
+              <img src="assets/img/logo.jpeg" alt="School Logo" />
+            </div>
+            <div>
+              <h3 class="text-primary-800 text-lg font-bold">A.P.J.A. KALAM HIGH SCHOOL</h3>
+              <h3 class="text-primary-800 text-lg hidden md:block">अ.पी.जे. अब्दुल कलाम उच्च विद्यालय</h3>
+            </div>
+          </div>
+
+          <div class="hidden lg:flex items-center space-x-8">
+            <a
+              href="index.html"
+              class="text-gray-700 hover:text-primary-600 font-medium transition-colors relative group"
+            >
+              Home
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 group-hover:w-full transition-all duration-300"
+              ></span>
+            </a>
+            <a
+              href="about.html"
+              class="text-gray-700 hover:text-primary-600 font-medium transition-colors relative group"
+            >
+              About
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 group-hover:w-full transition-all duration-300"
+              ></span>
+            </a>
+            <a
+              href="contact.html"
+              class="text-gray-700 hover:text-primary-600 font-medium transition-colors relative group"
+            >
+              Contact
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 group-hover:w-full transition-all duration-300"
+              ></span>
+            </a>
+          </div>
+
+          <button
+            class="lg:hidden text-gray-700 hover:text-primary-600 transition-colors"
+            id="mobile-menu-btn"
+          >
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        class="lg:hidden bg-white border-t border-gray-200 hidden"
+        id="mobile-menu"
+      >
+        <div class="px-4 py-2 space-y-2">
+          <a
+            href="index.html"
+            class="block py-2 text-gray-700 hover:text-primary-600 transition-colors"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="block py-2 text-gray-700 hover:text-primary-600 transition-colors"
+            >About</a
+          >
+          <a
+            href="contact.html"
+            class="block py-2 text-gray-700 hover:text-primary-600 transition-colors"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="hero-gradient pt-32 pb-16 relative overflow-hidden">
+      <div class="absolute inset-0 bg-pattern opacity-10"></div>
+      
+      <!-- Floating Elements -->
+      <div class="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full animate-float"></div>
+      <div class="absolute top-40 right-20 w-16 h-16 bg-white/5 rounded-full animate-float" style="animation-delay: -2s"></div>
+      <div class="absolute bottom-20 left-1/4 w-12 h-12 bg-white/15 rounded-full animate-float" style="animation-delay: -4s"></div>
+
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white relative z-10">
+        <div class="max-w-4xl mx-auto animate-fade-in-up">
+          <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-8 animate-bounce-slow">
+            <i class="fas fa-file-contract text-3xl text-cyan-300"></i>
+          </div>
+          <h1 class="text-5xl md:text-6xl font-bold mb-6 text-shadow">
+            Terms of Service
+          </h1>
+          <p class="text-xl text-gray-200 leading-relaxed">
+            Please read these terms carefully before using our educational services and website
+          </p>
+          <div class="mt-8">
+            <span class="inline-block bg-white/20 backdrop-filter backdrop-blur-sm rounded-full px-6 py-3 text-lg font-semibold">
+              Effective Date: January 1, 2024
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Terms of Service Content -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-primary-50 rounded-3xl p-8 mb-12 border-l-4 border-primary-500 animate-on-scroll">
+            <h2 class="text-2xl font-bold text-primary-800 mb-4">
+              <i class="fas fa-handshake mr-3"></i>
+              Agreement to Terms
+            </h2>
+            <p class="text-gray-700 leading-relaxed">
+              These Terms of Service ("Terms") constitute a binding legal agreement between you and APJA Kalam High School. By using our educational services, website, or any related services, you acknowledge that you have read, understood, and agree to be bound by these terms. If you do not agree to these terms, please do not use our services.
+            </p>
+          </div>
+
+          <!-- Definitions -->
+          <div class="terms-section animate-on-scroll">
+            <h3><i class="fas fa-book mr-3 text-primary-600"></i>Definitions</h3>
+            <div class="space-y-4 text-gray-700">
+              <div class="bg-gray-50 rounded-xl p-4">
+                <p><strong>"School" or "We":</strong> APJA Kalam High School, its staff, management, and authorized representatives</p>
+              </div>
+              <div class="bg-gray-50 rounded-xl p-4">
+                <p><strong>"Student":</strong> Any individual enrolled in our educational programs</p>
+              </div>
+              <div class="bg-gray-50 rounded-xl p-4">
+                <p><strong>"Parent/Guardian":</strong> Legal guardian or parent of a student</p>
+              </div>
+              <div class="bg-gray-50 rounded-xl p-4">
+                <p><strong>"User":</strong> Any person who accesses our website or uses our services</p>
+              </div>
+              <div class="bg-gray-50 rounded-xl p-4">
+                <p><strong>"Services":</strong> Educational programs, website, facilities, and all related school activities</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Acceptance of Services -->
+          <div class="terms-section animate-on-scroll">
+            <h3><i class="fas fa-check-circle mr-3 text-primary-600"></i>Acceptance of Educational Services</h3>
+            
+            <h4>Admission Requirements</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>Students must meet age and academic requirements for enrollment</li>
+              <li>All admission forms must be completed accurately and honestly</li>
+              <li>Required documents must be submitted within specified timeframes</li>
+              <li>Medical records and emergency contact information must be current</li>
+              <li>Previous school records and transfer certificates must be provided</li>
+            </ul>
+
+            <h4>Enrollment Process</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>Admission is subject to availability and meeting entrance criteria</li>
+              <li>Payment of admission fees confirms acceptance of these terms</li>
+              <li>Enrollment may be cancelled if false information is provided</li>
+              <li>The school reserves the right to refuse admission</li>
+            </ul>
+          </div>
+
+          <!-- Academic Policies -->
+          <div class="terms-section animate-on-scroll">
+            <h3><i class="fas fa-graduation-cap mr-3 text-primary-600"></i>Academic Policies and Standards</h3>
+            
+            <h4>Attendance Requirements</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>Students must maintain minimum 75% attendance as per board regulations</li>
+              <li>Late arrivals and early departures must be pre-approved</li>
+              <li>Extended absences require written notice from parents/guardians</li>
+              <li>Medical leaves require proper documentation</li>
+            </ul>
+
+            <h4>Academic Performance</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>Students are expected to maintain satisfactory academic progress</li>
+              <li>Regular assessments and examinations are mandatory</li>
+              <li>Academic dishonesty including cheating and plagiarism is prohibited</li>
+              <li>Support services are available for students facing academic challenges</li>
+            </ul>
+
+            <h4>Homework and Assignments</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>All assignments must be completed within specified deadlines</li>
+              <li>Original work is required; copying is not permitted</li>
+              <li>Late submissions may result in grade penalties</li>
+              <li>Parents are expected to support homework completion</li>
+            </ul>
+          </div>
+
+          <!-- Code of Conduct -->
+          <div class="terms-section animate-on-scroll">
+            <h3><i class="fas fa-users mr-3 text-primary-600"></i>Code of Conduct</h3>
+            
+            <h4>Student Behavior Expectations</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>Respect for teachers, staff, and fellow students at all times</li>
+              <li>Professional and appropriate language and behavior</li>
+              <li>Compliance with school dress code and uniform policies</li>
+              <li>Proper use of school facilities and equipment</li>
+              <li>Participation in school activities with enthusiasm and responsibility</li>
+            </ul>
+
+            <h4>Prohibited Activities</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>Bullying, harassment, or discrimination of any kind</li>
+              <li>Violence, threats, or aggressive behavior</li>
+              <li>Possession or use of prohibited items (weapons, drugs, etc.)</li>
+              <li>Vandalism or damage to school property</li>
+              <li>Disruption of classes or school activities</li>
+              <li>Unauthorized use of electronic devices during class time</li>
+            </ul>
+
+            <h4>Disciplinary Actions</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>Violations may result in warnings, detention, suspension, or expulsion</li>
+              <li>Serious offenses may lead to immediate disciplinary action</li>
+              <li>Parents will be notified of disciplinary measures</li>
+              <li>Appeals process is available for disciplinary decisions</li>
+            </ul>
+          </div>
+
+          <!-- Financial Obligations -->
+          <div class="terms-section animate-on-scroll">
+            <h3><i class="fas fa-rupee-sign mr-3 text-primary-600"></i>Financial Obligations</h3>
+            
+            <h4>Fee Structure</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>All fees must be paid according to the published schedule</li>
+              <li>Late payment may result in additional charges</li>
+              <li>Fee increases may be implemented with appropriate notice</li>
+              <li>Refund policies apply only in specific circumstances</li>
+            </ul>
+
+            <h4>Payment Methods</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>Cash payments accepted at the school office</li>
+              <li>Bank transfers and online payments available</li>
+              <li>Checks must be made payable to APJA Kalam High School</li>
+              <li>Payment confirmations should be retained for records</li>
+            </ul>
+
+            <h4>Additional Expenses</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>Books, uniforms, and supplies are additional costs</li>
+              <li>Field trips and special activities may require separate payment</li>
+              <li>Examination fees as per board requirements</li>
+              <li>Transportation fees if utilizing school transport service</li>
+            </ul>
+          </div>
+
+          <!-- Health and Safety -->
+          <div class="terms-section animate-on-scroll">
+            <h3><i class="fas fa-shield-alt mr-3 text-primary-600"></i>Health and Safety</h3>
+            
+            <h4>Medical Requirements</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>Students must provide current medical records and vaccination certificates</li>
+              <li>Medical conditions must be disclosed to school administration</li>
+              <li>Emergency medical authorization forms must be completed</li>
+              <li>Students with specific medical needs require proper documentation</li>
+            </ul>
+
+            <h4>Safety Protocols</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>Students must follow all safety guidelines and procedures</li>
+              <li>Emergency drills participation is mandatory</li>
+              <li>Visitors must sign in at the main office</li>
+              <li>School premises are monitored by security systems</li>
+            </ul>
+          </div>
+
+          <!-- Technology and Digital Policies -->
+          <div class="terms-section animate-on-scroll">
+            <h3><i class="fas fa-laptop mr-3 text-primary-600"></i>Technology and Digital Policies</h3>
+            
+            <h4>Website Usage</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>Website content is for informational purposes only</li>
+              <li>Users must not attempt to hack or disrupt the website</li>
+              <li>Unauthorized downloading or copying of content is prohibited</li>
+              <li>User-generated content must be appropriate and respectful</li>
+            </ul>
+
+            <h4>Digital Learning Platforms</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>Students are responsible for their login credentials</li>
+              <li>Sharing of accounts or passwords is not permitted</li>
+              <li>Appropriate use of digital resources is expected</li>
+              <li>Technical issues should be reported promptly</li>
+            </ul>
+          </div>
+
+          <!-- Communication Policies -->
+          <div class="terms-section animate-on-scroll">
+            <h3><i class="fas fa-comments mr-3 text-primary-600"></i>Communication Policies</h3>
+            
+            <h4>School-Parent Communication</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>Regular updates will be provided through official channels</li>
+              <li>Parent-teacher meetings are scheduled periodically</li>
+              <li>Emergency communications will be sent via multiple channels</li>
+              <li>Feedback and concerns should be addressed through proper channels</li>
+            </ul>
+
+            <h4>Social Media Guidelines</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>School-related social media posts should be positive and appropriate</li>
+              <li>Student privacy must be respected in all online content</li>
+              <li>Unauthorized use of school name or logo is prohibited</li>
+              <li>Cyberbullying will not be tolerated</li>
+            </ul>
+          </div>
+
+          <!-- Liability and Insurance -->
+          <div class="terms-section animate-on-scroll">
+            <h3><i class="fas fa-umbrella mr-3 text-primary-600"></i>Liability and Insurance</h3>
+            
+            <h4>School Liability</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>The school maintains appropriate insurance coverage</li>
+              <li>Liability is limited to incidents occurring on school premises during school hours</li>
+              <li>Parents are responsible for student behavior and actions</li>
+              <li>The school is not liable for personal property loss or damage</li>
+            </ul>
+
+            <h4>Student Insurance</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>Students are covered by school insurance for on-campus activities</li>
+              <li>Additional coverage may be recommended for sports activities</li>
+              <li>Insurance claims must be reported within specified timeframes</li>
+              <li>Coverage details are available upon request</li>
+            </ul>
+          </div>
+
+          <!-- Termination of Services -->
+          <div class="terms-section animate-on-scroll">
+            <h3><i class="fas fa-times-circle mr-3 text-primary-600"></i>Termination of Services</h3>
+            
+            <h4>Voluntary Withdrawal</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>Written notice must be provided for student withdrawal</li>
+              <li>Transfer certificates will be issued upon completion of formalities</li>
+              <li>Outstanding fees must be cleared before transfer</li>
+              <li>School property must be returned in good condition</li>
+            </ul>
+
+            <h4>Involuntary Termination</h4>
+            <ul class="terms-list text-gray-700 mb-6">
+              <li>The school reserves the right to terminate enrollment for serious violations</li>
+              <li>Non-payment of fees may result in termination of services</li>
+              <li>Academic or behavioral issues may lead to dismissal</li>
+              <li>Due process will be followed for all termination decisions</li>
+            </ul>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="terms-section animate-on-scroll">
+            <div class="bg-gradient-to-r from-primary-600 to-accent-500 rounded-3xl p-8 text-white">
+              <h3 class="text-white mb-6"><i class="fas fa-envelope mr-3"></i>Questions About These Terms</h3>
+              <p class="mb-6">If you have questions about these Terms of Service or need clarification on any policies, please contact us:</p>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="text-white font-semibold mb-3">Administration Office</h4>
+                  <div class="space-y-2 text-gray-100">
+                    <p><i class="fas fa-user mr-2"></i> Miss Rafat Ara (Principal)</p>
+                    <p><i class="fas fa-envelope mr-2"></i> apjakhs@gmail.com</p>
+                    <p><i class="fas fa-phone mr-2"></i> +91 9431150071</p>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 class="text-white font-semibold mb-3">School Address</h4>
+                  <div class="text-gray-100">
+                    <p><i class="fas fa-map-marker-alt mr-2"></i> Road No 6, Jawahar Nagar,<br>
+                    Kalika Nagar, APJAK ROAD<br>
+                    Ulidih Mango, Jamshedpur - 831012</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-6 p-4 bg-white/20 rounded-xl backdrop-filter backdrop-blur-sm">
+                <p class="text-sm"><i class="fas fa-clock mr-2"></i> Office hours: Monday to Friday, 8:00 AM to 3:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Updates to Terms -->
+          <div class="terms-section animate-on-scroll">
+            <h3><i class="fas fa-sync-alt mr-3 text-primary-600"></i>Updates to These Terms</h3>
+            <p class="text-gray-700 mb-4">We may update these Terms of Service from time to time to reflect changes in our policies, services, or legal requirements. We will notify you of significant changes by:</p>
+            <ul class="terms-list text-gray-700">
+              <li>Posting the updated terms on our website</li>
+              <li>Sending notification to registered email addresses</li>
+              <li>Announcing changes through school communication channels</li>
+              <li>Providing notice as required by applicable laws</li>
+            </ul>
+            <p class="text-gray-700 mt-4">Continued use of our services after changes become effective constitutes acceptance of the updated terms.</p>
+          </div>
+
+          <!-- Governing Law -->
+          <div class="terms-section animate-on-scroll">
+            <h3><i class="fas fa-gavel mr-3 text-primary-600"></i>Governing Law</h3>
+            <p class="text-gray-700 mb-4">These Terms of Service are governed by and construed in accordance with the laws of India. Any disputes arising from these terms will be subject to the jurisdiction of the courts in Jharkhand, India.</p>
+          </div>
+
+          <!-- Severability -->
+          <div class="terms-section animate-on-scroll">
+            <h3><i class="fas fa-balance-scale mr-3 text-primary-600"></i>Severability</h3>
+            <p class="text-gray-700 mb-4">If any provision of these Terms of Service is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that the remaining terms will remain in full force and effect.</p>
+          </div>
+
+          <!-- Last Updated -->
+          <div class="text-center pt-8 border-t border-gray-200 animate-on-scroll">
+            <p class="text-gray-500 font-medium">
+              <i class="fas fa-calendar mr-2"></i>
+              Last Updated: January 1, 2024
+            </p>
+            <p class="text-gray-400 text-sm mt-2">
+              Version 1.0 - Initial Release
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16 relative overflow-hidden">
+      <!-- Background Elements -->
+      <div class="absolute top-0 left-0 w-64 h-64 bg-gradient-to-br from-primary-600/20 to-accent-500/20 rounded-full transform -translate-x-32 -translate-y-32"></div>
+      <div class="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-br from-purple-600/20 to-pink-500/20 rounded-full transform translate-x-40 translate-y-40"></div>
+
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid lg:grid-cols-4 gap-12">
+          <!-- School Info -->
+          <div class="lg:col-span-1 animate-on-scroll">
+            <div class="flex items-center space-x-3 mb-6">
+              <div>
+                <img src="assets/img/logo.jpeg" alt="APJA Kalam Logo" class="w-20 h-20 object-cover rounded-full" />
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">APJA Kalam High School</h3>
+              </div>
+            </div>
+            <p class="text-gray-400 mb-6 leading-relaxed">
+              A school is always a 'world in miniature' where one receives a 'training for life', where effective, meaningful and joyful learning takes place.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="animate-on-scroll">
+            <h4 class="text-xl font-bold mb-6 relative">
+              Quick Links
+              <div class="absolute bottom-0 left-0 w-12 h-1 bg-gradient-to-r from-primary-500 to-accent-500 rounded"></div>
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a href="index.html#about" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group">
+                  <i class="fas fa-chevron-right text-xs mr-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="index.html#gallery" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group">
+                  <i class="fas fa-chevron-right text-xs mr-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+                  Gallery
+                </a>
+              </li>
+              <li>
+                <a href="index.html#about" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group">
+                  <i class="fas fa-chevron-right text-xs mr-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+                  Academics
+                </a>
+              </li>
+              <li>
+                <a href="index.html#facilities" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group">
+                  <i class="fas fa-chevron-right text-xs mr-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+                  Facilities
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div class="animate-on-scroll">
+            <h4 class="text-xl font-bold mb-6 relative">
+              Support
+              <div class="absolute bottom-0 left-0 w-12 h-1 bg-gradient-to-r from-primary-500 to-accent-500 rounded"></div>
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a href="contact.html#faq" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group">
+                  <i class="fas fa-chevron-right text-xs mr-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a href="terms-of-service.html" class="text-primary-400 hover:text-white transition-colors duration-300 flex items-center group">
+                  <i class="fas fa-chevron-right text-xs mr-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group">
+                  <i class="fas fa-chevron-right text-xs mr-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="animate-on-scroll">
+            <h4 class="text-xl font-bold mb-6 relative">
+              Contact Info
+              <div class="absolute bottom-0 left-0 w-12 h-1 bg-gradient-to-r from-primary-500 to-accent-500 rounded"></div>
+            </h4>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-3 group">
+                <div class="w-10 h-10 bg-gray-800 rounded-xl flex items-center justify-center mt-1 group-hover:bg-primary-600 transition-colors duration-300">
+                  <i class="fas fa-map-marker-alt text-sm"></i>
+                </div>
+                <div>
+                  <p class="text-gray-400 group-hover:text-white transition-colors duration-300">
+                    Road No 6, Jawahar Nagar, Kalika Nagar, APJAK ROAD Ulidih Mango, Jamshedpur - 831012
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 bg-gray-800 rounded-xl flex items-center justify-center group-hover:bg-primary-600 transition-colors duration-300">
+                  <i class="fas fa-phone text-sm"></i>
+                </div>
+                <p class="text-gray-400 group-hover:text-white transition-colors duration-300">
+                  Office: +91 9431150071, +91 6577962722 <br />
+                  Admission: +91 9973300414, +91 6201686780
+                </p>
+              </div>
+
+              <div class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 bg-gray-800 rounded-xl flex items-center justify-center group-hover:bg-primary-600 transition-colors duration-300">
+                  <i class="fas fa-envelope text-sm"></i>
+                </div>
+                <p class="text-gray-400 group-hover:text-white transition-colors duration-300">
+                  apjakhs@gmail.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-gray-800 mt-16 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p class="text-gray-400 text-center md:text-left">
+              &copy; 2024 APJA Kalam High School. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button
+      id="scrollToTop"
+      class="fixed bottom-6 right-6 w-14 h-14 bg-gradient-to-r from-primary-600 to-accent-500 text-white rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 opacity-0 invisible z-50 group"
+    >
+      <i class="fas fa-arrow-up group-hover:animate-bounce"></i>
+    </button>
+
+    <script>
+      // Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        const icon = mobileMenuBtn.querySelector("i");
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-times");
+      });
+
+      // Navbar Scroll Effect
+      let lastScrollTop = 0;
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop && scrollTop > 100) {
+          // Scrolling down
+          navbar.classList.remove("navbar-visible");
+          navbar.classList.add("navbar-hidden");
+        } else {
+          // Scrolling up
+          navbar.classList.remove("navbar-hidden");
+          navbar.classList.add("navbar-visible");
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+
+        // Add background to navbar when scrolled
+        if (window.scrollY > 50) {
+          navbar.classList.add("bg-white/95", "shadow-lg");
+        } else {
+          navbar.classList.remove("bg-white/95", "shadow-lg");
+        }
+      });
+
+      // Scroll to Top
+      const scrollToTop = document.getElementById("scrollToTop");
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          scrollToTop.classList.remove("opacity-0", "invisible");
+          scrollToTop.classList.add("opacity-100", "visible");
+        } else {
+          scrollToTop.classList.add("opacity-0", "invisible");
+          scrollToTop.classList.remove("opacity-100", "visible");
+        }
+      });
+
+      scrollToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      // Smooth Scrolling for Navigation Links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+
+      // Animate on Scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
